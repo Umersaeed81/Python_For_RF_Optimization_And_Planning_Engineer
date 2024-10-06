@@ -123,11 +123,3 @@ with pd.ExcelWriter("03_UMTS_BSS_Issus_Intervals.xlsx",date_format = 'dd-mm-yyyy
 ```
 
 
-```python
-
-```
-
-
-```python
-
-```
