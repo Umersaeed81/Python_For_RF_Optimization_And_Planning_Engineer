@@ -53,7 +53,6 @@ else:
     print(f"No file found with the required dates in the last three days.")
 ```
 
-    Filtered File List: ['LTE_Cell_Hourly_01_11_03102024.zip', 'LTE_Cell_Hourly_12_23_03102024.zip']
     
 
 ## Import and Concat Cell Hourly KPIs
@@ -195,167 +194,11 @@ df1 = df0.groupby(['Date','eNodeB Name','Cell Name','LocalCell Id','eNodeB Funct
 ```
 
 
-```python
-df1.head()
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Date</th>
-      <th>eNodeB Name</th>
-      <th>Cell Name</th>
-      <th>LocalCell Id</th>
-      <th>eNodeB Function Name</th>
-      <th>Total Count of (Down Time)&gt;0 between 0:00-23:00</th>
-      <th>Total Count of (Down Time)&gt;0 between 9:00-21:00</th>
-      <th>Total_Interval_UL_Interference&gt;-108</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2024-10-03</td>
-      <td>MBTS_1000_MSC PECHS Karachi-Z4 (3G-S-2000)</td>
-      <td>4G-S-142000-1_MSC PECHS (Gold) Karachi-Z4 (1000)</td>
-      <td>1</td>
-      <td>4G-S-142000_MSC PECHS (Gold) Karachi-Z4 (1000)</td>
-      <td>0</td>
-      <td>0</td>
-      <td>16</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2024-10-03</td>
-      <td>MBTS_1000_MSC PECHS Karachi-Z4 (3G-S-2000)</td>
-      <td>4G-S-142000-2_MSC PECHS (Gold) Karachi-Z4 (1000)</td>
-      <td>2</td>
-      <td>4G-S-142000_MSC PECHS (Gold) Karachi-Z4 (1000)</td>
-      <td>0</td>
-      <td>0</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2024-10-03</td>
-      <td>MBTS_1000_MSC PECHS Karachi-Z4 (3G-S-2000)</td>
-      <td>4G-S-142000-3_MSC PECHS (Gold) Karachi-Z4 (1000)</td>
-      <td>3</td>
-      <td>4G-S-142000_MSC PECHS (Gold) Karachi-Z4 (1000)</td>
-      <td>0</td>
-      <td>0</td>
-      <td>17</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>2024-10-03</td>
-      <td>MBTS_1001_State Life Building (Gold) Karachi-Z...</td>
-      <td>4G-S-142001-1_State Life Building (Gold) Karac...</td>
-      <td>1</td>
-      <td>4G-S-142001_State Life Building (Gold) Karachi...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2024-10-03</td>
-      <td>MBTS_1001_State Life Building (Gold) Karachi-Z...</td>
-      <td>4G-S-142001-2_State Life Building (Gold) Karac...</td>
-      <td>2</td>
-      <td>4G-S-142001_State Life Building (Gold) Karachi...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
 
 
 ## Idendtify the Max RTWP for LTE
 
-
-```python
-df0.head(2)
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Date</th>
-      <th>Time</th>
-      <th>eNodeB Name</th>
-      <th>Cell Name</th>
-      <th>LocalCell Id</th>
-      <th>eNodeB Function Name</th>
-      <th>L.UL.Interference.Avg(dBm)</th>
-      <th>Radio Network Unavailability Rate_Cell</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2024-10-03</td>
-      <td>2024-10-04</td>
-      <td>MBTS_3146_Ghalib Market Gulberg Lahore-Z3 (3G-...</td>
-      <td>4G-CI-121575-3_Ghalib Market Gulberg Lahore-Z3...</td>
-      <td>3</td>
-      <td>4G-CI-121575_Ghalib Market Gulberg Lahore-Z3(3...</td>
-      <td>-112.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2024-10-03</td>
-      <td>2024-10-04</td>
-      <td>MBTS_3146_Ghalib Market Gulberg Lahore-Z3 (3G-...</td>
-      <td>4G-CI-121575-2_Ghalib Market Gulberg Lahore-Z3...</td>
-      <td>2</td>
-      <td>4G-CI-121575_Ghalib Market Gulberg Lahore-Z3(3...</td>
-      <td>-112.0</td>
-      <td>0.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
 
 
@@ -365,64 +208,6 @@ df2 = df0[['Date','Time','eNodeB Name','Cell Name','LocalCell Id','eNodeB Functi
 ```
 
 
-```python
-df2.head(2)
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Date</th>
-      <th>Time</th>
-      <th>eNodeB Name</th>
-      <th>Cell Name</th>
-      <th>LocalCell Id</th>
-      <th>eNodeB Function Name</th>
-      <th>L.UL.Interference.Avg(dBm)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2024-10-03</td>
-      <td>2024-10-04</td>
-      <td>MBTS_3146_Ghalib Market Gulberg Lahore-Z3 (3G-...</td>
-      <td>4G-CI-121575-3_Ghalib Market Gulberg Lahore-Z3...</td>
-      <td>3</td>
-      <td>4G-CI-121575_Ghalib Market Gulberg Lahore-Z3(3...</td>
-      <td>-112.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2024-10-03</td>
-      <td>2024-10-04</td>
-      <td>MBTS_3146_Ghalib Market Gulberg Lahore-Z3 (3G-...</td>
-      <td>4G-CI-121575-2_Ghalib Market Gulberg Lahore-Z3...</td>
-      <td>2</td>
-      <td>4G-CI-121575_Ghalib Market Gulberg Lahore-Z3(3...</td>
-      <td>-112.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
 
 
@@ -511,12 +296,3 @@ for unique_date in df1['Date'].unique():
 %reset -f
 ```
 
-
-```python
-
-```
-
-
-```python
-
-```
