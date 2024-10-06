@@ -8,7 +8,7 @@ MS Data Science, School of Business and Economics<br>
 **Address:** Dream Gardens,Defence Road, Lahore<br>
 
 # Monthly & Weekly DA KPIs
-tt
+
 ## Import required Libraries
 
 
