@@ -85,9 +85,7 @@ df0 = pd.concat(
 ```
 
 
-```python
-#df0.head(2)
-```
+
 
 ## Calculate Degraded Intervals
 
@@ -205,11 +203,4 @@ for unique_date in df1['Date'].unique():
 ```
 
 
-```python
 
-```
-
-
-```python
-
-```
