@@ -50,12 +50,6 @@ border = openpyxl.styles.borders.Border(
     right=openpyxl.styles.borders.Side(style='thin'),
     top=openpyxl.styles.borders.Side(style='thin'),
     bottom=openpyxl.styles.borders.Side(style='thin'))
-
-# # Loop through each cell in all the worksheet and set the border style
-# for ws in wb:
-#     for row in ws.iter_rows():
-#         for cell in row:
-#             cell.border = border
 ```
 
 ## Apply Font Style and Size (All the Sheets)
