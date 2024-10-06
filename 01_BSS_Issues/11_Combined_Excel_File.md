@@ -35,37 +35,6 @@ warnings.simplefilter("ignore")
 
 
 ```python
-# for filename in os.listdir(folder_path):
-#     if filename.endswith('.xlsx'):
-#         file_path = os.path.join(folder_path, filename)
-#         workbook = load_workbook(file_path)
-#         for sheet_name in workbook.sheetnames:
-#             sheet = workbook[sheet_name]
-            
-#             # Skip blank sheets
-#             if sheet.max_row == 0 or sheet.max_column == 0:
-#                 continue
-            
-#             new_sheet = new_workbook.create_sheet(title=sheet_name)
-#             for row in sheet.iter_rows(values_only=True):
-#                 new_row = []
-#                 for cell in row:
-#                     if isinstance(cell, (int, float)):
-#                         new_row.append(cell)
-#                     elif isinstance(cell, str):
-#                         new_row.append(cell)
-#                     elif isinstance(cell, (datetime.date, datetime.datetime)):
-#                         formatted_date = cell.strftime('%d-%m-%Y')
-#                         new_row.append(formatted_date)
-#                     else:
-#                         new_row.append(None)
-#                 new_sheet.append(new_row)
-# # Save New Excel Sheet
-# new_workbook.save(new_file_path)
-```
-
-
-```python
 import os
 from openpyxl import load_workbook, Workbook
 from openpyxl.utils import get_column_letter
@@ -128,6 +97,4 @@ copy_workbook(folder_path, new_file_path)
 ```
 
 
-```python
 
-```
