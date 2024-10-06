@@ -53,7 +53,7 @@ else:
     print(f"No file found with the required dates in the last three days.")
 ```
 
-    Filtered File List: ['UMTS_Cell_Hourly_03102024.zip']
+
     
 
 ## Import and Concat Cell Hourly KPIs
@@ -101,9 +101,7 @@ df1 = df0.groupby(['Date','RNC', 'Cell ID']).apply(lambda x: pd.Series({
 ```
 
 
-```python
-#df1.head(2)
-```
+
 
 ## Idendtify the Max RTWP for UMTS
 
@@ -113,9 +111,7 @@ df2 = df0[['Date','Time','RNC','Cell ID','VS.MeanRTWP(dBm)']].dropna().reset_ind
 ```
 
 
-```python
-#df2.head(2)
-```
+
 
 
 ```python
