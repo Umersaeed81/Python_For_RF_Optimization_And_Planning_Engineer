@@ -7,7 +7,7 @@ MS Data Science, School of Business and Economics<br>
 **Email:**  umersaeed81@hotmail.com<br>
 **Address:** Dream Gardens,Defence Road, Lahore<br>
 
-# Monthly SLA tt
+# Monthly SLA
 
 ## Import required Libraries
 
