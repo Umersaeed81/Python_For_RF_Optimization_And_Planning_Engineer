@@ -458,8 +458,3 @@ shutil.move(file_path, destination_folder)
 ```
 
 
-
-
-    'D:/Advance_Data_Sets/Output_Folder\\BSS_Issues.xlsx'
-
-
