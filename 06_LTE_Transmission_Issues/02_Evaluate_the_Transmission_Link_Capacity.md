@@ -145,7 +145,3 @@ with pd.ExcelWriter("02_LTE_TXN_Availability_Issues.xlsx",date_format = 'dd-mm-y
 %reset -f
 ```
 
-
-```python
-
-```
