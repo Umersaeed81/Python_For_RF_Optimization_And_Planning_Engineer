@@ -19,11 +19,7 @@ for file_name in files_to_delete:
         print(f"Error deleting {file_name}: {e}")
 ```
 
-    File 02_UMTS_BSS_Issus.xlsx deleted successfully.
-    File 03_UMTS_BSS_Issus_Intervals.xlsx deleted successfully.
-    File 04_LTE_BSS_Issus.xlsx deleted successfully.
-    File 05_LTE_BSS_Issus_Intervals.xlsx deleted successfully.
-    
+
 
 
 ```python
