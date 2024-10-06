@@ -52,7 +52,6 @@ else:
     print(f"No file found with the required dates in the last three days.")
 ```
 
-    Filtered File List: ['288_GSM_EI_Availability_Intervals_27092024.csv', '289_GSM_EI_Availability_Intervals_28092024.csv', '290_GSM_EI_Availability_Intervals_29092024.csv', '291_GSM_EI_Availability_Intervals_30092024.csv', '292_GSM_EI_Availability_Intervals_01102024.csv', '293_GSM_EI_Availability_Intervals_02102024.csv', '294_GSM_EI_Availability_Intervals_03102024.csv']
     
 
 ## Import and Concat Input Files
@@ -119,6 +118,3 @@ with pd.ExcelWriter("01_GSM_BSS_Issus_Intervals.xlsx",date_format = 'dd-mm-yyyy'
 ```
 
 
-```python
-
-```
