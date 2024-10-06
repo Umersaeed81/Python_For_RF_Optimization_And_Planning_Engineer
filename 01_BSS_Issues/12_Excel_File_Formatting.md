@@ -63,15 +63,7 @@ for ws in wb:
             cell.font = openpyxl.styles.Font(name='Calibri Light', size=11)
 ```
 
-## Apply alignment (All the sheets)
 
-
-```python
-# for ws in wb:
-#     for row in ws.iter_rows():
-#         for cell in row:
-#             cell.alignment = openpyxl.styles.Alignment(horizontal='center', vertical='center')
-```
 
 ## WrapText of header and Formatting (All the sheets)
 
