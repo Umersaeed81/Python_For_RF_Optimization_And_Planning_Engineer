@@ -53,8 +53,6 @@ else:
     print(f"No file found with the required dates in the last three days.")
 ```
 
-    Filtered File List: ['UMTS_Cell_DA_01102024.zip', 'UMTS_Cell_DA_02102024.zip', 'UMTS_Cell_DA_03102024.zip', 'UMTS_Cell_DA_27092024.zip', 'UMTS_Cell_DA_28092024.zip', 'UMTS_Cell_DA_29092024.zip', 'UMTS_Cell_DA_30092024.zip']
-    
 
 ## Import Input Data Set
 
