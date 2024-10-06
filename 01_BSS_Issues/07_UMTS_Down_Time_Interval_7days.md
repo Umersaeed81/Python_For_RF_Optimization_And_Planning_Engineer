@@ -52,7 +52,7 @@ else:
     print(f"No file found with the required dates in the last three days.")
 ```
 
-    Filtered File List: ['290_UMTS_RTWP_DownTime_Intervals_27092024.csv', '291_UMTS_RTWP_DownTime_Intervals_28092024.csv', '292_UMTS_RTWP_DownTime_Intervals_29092024.csv', '293_UMTS_RTWP_DownTime_Intervals_30092024.csv', '294_UMTS_RTWP_DownTime_Intervals_01102024.csv', '295_UMTS_RTWP_DownTime_Intervals_02102024.csv', '296_UMTS_RTWP_DownTime_Intervals_03102024.csv']
+
     
 
 ## Import and Concat Input Files
@@ -71,58 +71,6 @@ df=pd.concat((pd.read_csv(file,\
 ```
 
 
-```python
-df.head(2)
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Date</th>
-      <th>RNC</th>
-      <th>Cell ID</th>
-      <th>Total Count of (Down Time)&gt;0 between 0:00-23:00</th>
-      <th>Total Count of (Down Time)&gt;0 between 9:00-21:00</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2024-09-27</td>
-      <td>FSDRNC02</td>
-      <td>10043</td>
-      <td>8</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2024-09-27</td>
-      <td>PSHRNC01</td>
-      <td>22668</td>
-      <td>4</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
 
 
