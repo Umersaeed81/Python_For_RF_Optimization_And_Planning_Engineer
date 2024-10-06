@@ -52,7 +52,7 @@ else:
     print(f"No file found with the required dates in the last three days.")
 ```
 
-    Filtered File List: ['301_LTE_RTWP_DownTime_Intervals_27092024.csv', '302_LTE_RTWP_DownTime_Intervals_28092024.csv', '303_LTE_RTWP_DownTime_Intervals_29092024.csv', '304_LTE_RTWP_DownTime_Intervals_30092024.csv', '305_LTE_RTWP_DownTime_Intervals_01102024.csv', '306_LTE_RTWP_DownTime_Intervals_02102024.csv', '307_LTE_RTWP_DownTime_Intervals_03102024.csv']
+
     
 
 ## Import and Concat Input Files
@@ -120,11 +120,3 @@ with pd.ExcelWriter("05_LTE_BSS_Issus_Intervals.xlsx",date_format = 'dd-mm-yyyy'
 ```
 
 
-```python
-
-```
-
-
-```python
-
-```
