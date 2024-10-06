@@ -145,17 +145,7 @@ ws311 = wb['GSM_BSS_Issus']
 ws311.delete_rows(3)
 ```
 
-## Merge Cells
 
-
-```python
-# # Merge cells E1:L1
-# ws311.merge_cells('F1:L1')
-# # Merge cells L1:R1
-# ws311.merge_cells('M1:S1')
-# # Merge cells S1:Y1
-# ws311.merge_cells('T1:Z1')
-```
 
 ## Condtional Merge Cells in GSM BSS Issue Sheet
 
