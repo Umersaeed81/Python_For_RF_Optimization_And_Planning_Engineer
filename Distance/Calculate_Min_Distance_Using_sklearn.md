@@ -12,6 +12,8 @@ MS Data Science, School of Business and Economics<br>
 
 The objective of this code is to find the closest geographical point from one dataset to each point in another dataset using an efficient algorithm. Here’s a simple breakdown of what the code does:
 
+![](https://github.com/Umersaeed81/Python_For_RF_Optimization_And_Planning_Engineer/blob/main/Distance/example_2_b.png?raw=true)
+
 1. **Import Necessary Libraries:** It imports libraries for data handling, mathematical operations, and spatial analysis.
 
 2. **Set the Working Directory:** The code changes the working directory to a specified folder that contains the datasets.
