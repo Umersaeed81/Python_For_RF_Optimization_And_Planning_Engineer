@@ -15,7 +15,7 @@ The objective of the code is to calculate the shortest distance between two sets
 
 2. **Set the Working Directory:** The code changes the working directory to a specified folder containing the datasets.
 
-3. **Load Data:** It reads data from a CSV file (Ookla_File.csv) and an Excel file (EP.xlsx), which contain geographical information.
+3. **Load Data:** It reads data from a CSV file (`Ookla_File.csv`) and an Excel file (`EP.xlsx`), which contain geographical information.
 
 4. **Create Cartesian Product:** It generates all possible combinations (Cartesian product) of the points from the two datasets, essentially pairing each point in the first dataset with each point in the second dataset.
 
@@ -29,6 +29,7 @@ The objective of the code is to calculate the shortest distance between two sets
 
 9. **Find Minimum Distances:** Finally, it identifies the closest point from the second dataset for each unique test ID in the first dataset and stores these results in a new DataFrame.
 
+Overall, this code helps in analyzing distances between geographical locations from two different sources, allowing for further insights or decisions based on proximity.
 
 ## Import Required Libraries
 
