@@ -10,6 +10,28 @@ MS Data Science, School of Business and Economics<br>
 
 # Efficient Nearest Neighbor Search Using BallTree and Haversine Distance
 
+The objective of this code is to find the closest geographical point from one dataset to each point in another dataset using an efficient algorithm. Here’s a simple breakdown of what the code does:
+
+1. **Import Necessary Libraries:** It imports libraries for data handling, mathematical operations, and spatial analysis.
+
+2. **Set the Working Directory:** The code changes the working directory to a specified folder that contains the datasets.
+
+3. **Load Data:** It reads data from a CSV file (`Ookla_File.csv`) and an Excel file (`EP.xlsx`), which include geographical coordinates (latitude and longitude).
+
+4. **Convert Coordinates to Radians:** It converts the latitude and longitude coordinates from degrees to radians for accurate distance calculations.
+
+5. **Prepare BallTree Structure:** The code prepares a BallTree structure using the latitude and longitude data from the second dataset (`table_b`). BallTree is a data structure that helps efficiently find nearest neighbors in multi-dimensional spaces.
+
+6. **Find Closest Points:** It queries the BallTree to find the closest point in `table_b` for each point in `table_a`. It retrieves the distances and the indices of the closest points.
+
+7. **Convert Distance Units:** The distances obtained are in radians, so the code converts them to kilometers (considering the Earth's radius).
+
+8. **Store Results:** It adds two new columns to `table_a`: one for the closest site ID from `table_b` and another for the corresponding distance in kilometers.
+
+9. **Prepare Final Output:** Finally, it creates a new DataFrame containing relevant information, including test ID, client coordinates, closest site ID, and closest distance.
+
+Overall, this code helps identify the nearest geographical locations from a second dataset for each location in the first dataset, facilitating geographical analysis and decision-making.
+
 ## Import Required Libraries
 
 
