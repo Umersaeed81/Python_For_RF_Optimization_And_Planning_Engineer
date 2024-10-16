@@ -11,6 +11,8 @@ MS Data Science, School of Business and Economics<br>
 
 The objective of the code is to calculate the shortest distance between two sets of geographical points using their latitude and longitude coordinates. Here's a breakdown of what the code does:
 
+![](https://github.com/Umersaeed81/Python_For_RF_Optimization_And_Planning_Engineer/blob/main/Distance/example_1_b.png?raw=true)
+
 1. **Import Necessary Libraries:** It imports libraries for handling data and performing mathematical calculations.
 
 2. **Set the Working Directory:** The code changes the working directory to a specified folder containing the datasets.
