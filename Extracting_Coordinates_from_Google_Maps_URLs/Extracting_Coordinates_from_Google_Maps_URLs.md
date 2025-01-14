@@ -1,3 +1,12 @@
+#  [Umer Saeed](https://www.linkedin.com/in/engumersaeed/)
+Sr. RF Planning & Optimization Engineer<br>
+BSc Telecommunications Engineering, School of Engineering<br>
+MS Data Science, School of Business and Economics<br>
+**University of Management & Technology**<br>
+**Mobile:**     +923018412180<br>
+**Email:**  umersaeed81@hotmail.com<br>
+**Address:** Dream Gardens,Defence Road, Lahore<br>
+--------------------------------------------------------------------------------
 # Extracting Coordinates from Google Maps URLs and Exporting to Excel
 
 ![](https://github.com/Umersaeed81/Python_For_RF_Optimization_And_Planning_Engineer/blob/main/Extracting_Coordinates_from_Google_Maps_URLs/00_Extracting_Coordinates.png?raw=true)
