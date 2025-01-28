@@ -24,7 +24,7 @@ from openpyxl import load_workbook
 folder_path = "D:/Advance_Data_Sets/WCMS"  
 ```
 
-
+## Define the keys to extract
 ```python
 # Define the keys to extract
 keys_to_extract = [
@@ -65,7 +65,7 @@ for file_name in os.listdir(folder_path):
 df = pd.DataFrame(all_data)
 ```
 
-
+## Re-order the requied columns
 ```python
 # Requierd Order
 df1= df[['Site ID','Region','City','District','Location Name','Site Address',
@@ -75,13 +75,13 @@ df1= df[['Site ID','Region','City','District','Location Name','Site Address',
         'Building Height','Antenna Type']]
 ```
 
-
+## Pre-Processing
 ```python
 # Remove leading/trailing spaces and normalize spaces in between
 df1.columns = df1.columns.str.strip().str.replace(r'\s+', ' ', regex=True)
 ```
 
-
+## Export Output
 ```python
 # Export Ouput
 df1.to_excel("output.xlsx", index=False)
