@@ -28,6 +28,7 @@ The script starts by importing the necessary libraries:
 - `os` for file operations.
 - `pandas` for data manipulation and exporting.
 - `openpyxl` to interact with Excel files.
+
 The folder containing the Excel files is specified with `folder_path`.
 
 ## Import Required Libraries
