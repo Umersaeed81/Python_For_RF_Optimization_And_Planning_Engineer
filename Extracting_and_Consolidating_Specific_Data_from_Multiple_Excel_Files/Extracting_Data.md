@@ -10,17 +10,17 @@ MS Data Science, School of Business and Economics<br>
 -----------------------------------------------------
 # Automating Data Extraction from Excel Files in Python: A Step-by-Step Guide
 
-## Introduction
+# Introduction
 Managing data from multiple Excel files can be a tedious task, especially when dealing with large datasets that require extracting specific details. This article walks you through a Python script designed to automate the process of extracting key information from Excel files stored in a folder. By leveraging Python libraries like `os`, `pandas`, and `openpyxl`, this solution efficiently extracts and organizes the data into a consolidated output.
 
-## Objectives of the Script
+# Objectives of the Script
 The goal of this script is to:
 
 1. Extract specific key-value pairs from multiple Excel files stored in a folder.
 2. Normalize the data into a consistent format.
 3. Save the extracted information into a well-organized output file.
 
-## Step-by-Step Explanation of the Code
+# Step-by-Step Explanation of the Code
 
 ## 1. Setting Up the Environment
 The script starts by importing the necessary libraries:
@@ -113,13 +113,13 @@ The cleaned and structured DataFrame is exported as an Excel file.
 # Export Ouput
 df1.to_excel("output.xlsx", index=False)
 ```
-## Key Features of the Script
+# Key Features of the Script
 - **Dynamic Key Extraction**: Only the specified keys are extracted, ensuring focus on relevant data.
 - **File Name Inclusion**: Each entry includes the source file name for traceability.
 - **Normalization**: Leading/trailing spaces and irregular spacing in column names are removed for consistency.
 - **Consolidation**: Data from multiple files is combined into a single, organized Excel file.
 
-## Practical Applications
+# Practical Applications
 This script can be customized and applied in various scenarios, such as:
 
 - Combining site information for network planning and optimization.
