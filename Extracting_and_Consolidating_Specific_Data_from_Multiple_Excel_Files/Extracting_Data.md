@@ -29,9 +29,9 @@ The script starts by importing the necessary libraries:
 - `pandas` for data manipulation and exporting.
 - `openpyxl` to interact with Excel files.
 
-The folder containing the Excel files is specified with `folder_path`.
 
-## Import Required Libraries
+
+
 ```python
 import os
 import pandas as pd
@@ -40,12 +40,16 @@ from openpyxl import load_workbook
 
 ## Set Excel Files Path 
 
+The folder containing the Excel files is specified with `folder_path`.
+
 ```python
 # Folder containing the Excel files
 folder_path = "D:/Advance_Data_Sets/WCMS"  
 ```
 
-## Define the keys to extract
+## 2. Defining Keys to Extract
+A list of keys to extract from the Excel sheets is defined. These keys correspond to column headers or identifiers used in the dataset.
+
 ```python
 # Define the keys to extract
 keys_to_extract = [
@@ -55,7 +59,9 @@ keys_to_extract = [
 ]
 ```
 
-## Iterating Through Excel Files to Extract Key-Value Data with Python
+## 3. Processing Files and Extracting Data
+
+The script processes all `.xlsx` files in the specified folder to extract relevant data. For each file, the workbook is loaded using `openpyxl`, and the active sheet is accessed. The script then iterates through the rows of the sheet to match keys defined in `keys_to_extract`. If a cell value matches one of the keys, the corresponding value from a cell two columns away is retrieved and stored in a dictionary, which also includes the file name for reference. The dictionary is appended to a list (`all_data`) to gather data from all files. Finally, the collected data is converted into a `pandas` DataFrame for further manipulation.
 
 ```python
 # Initialize a list to store the data from all files
@@ -86,7 +92,10 @@ for file_name in os.listdir(folder_path):
 df = pd.DataFrame(all_data)
 ```
 
-## Re-order the requied columns
+## 4. Organizing the Columns
+
+The script reorders the DataFrame to ensure the output follows the specified sequence. Additionally, it removes unnecessary spaces in column names.
+
 ```python
 # Requierd Order
 df1= df[['Site ID','Region','City','District','Location Name','Site Address',
@@ -94,16 +103,30 @@ df1= df[['Site ID','Region','City','District','Location Name','Site Address',
         'Site Name LTE','Site Name 5G','eNodeB ID','5GNodeB ID',
         'Project ','Objective','Band','Site Type',
         'Building Height','Antenna Type']]
-```
-
-## Pre-Processing
-```python
-# Remove leading/trailing spaces and normalize spaces in between
 df1.columns = df1.columns.str.strip().str.replace(r'\s+', ' ', regex=True)
 ```
 
-## Export Output
+## 5. Exporting the Final Output
+The cleaned and structured DataFrame is exported as an Excel file.
+
 ```python
 # Export Ouput
 df1.to_excel("output.xlsx", index=False)
 ```
+## Key Features of the Script
+- **Dynamic Key Extraction**: Only the specified keys are extracted, ensuring focus on relevant data.
+- **File Name Inclusion**: Each entry includes the source file name for traceability.
+- **Normalization**: Leading/trailing spaces and irregular spacing in column names are removed for consistency.
+- **Consolidation**: Data from multiple files is combined into a single, organized Excel file.
+
+## Practical Applications
+This script can be customized and applied in various scenarios, such as:
+
+- Combining site information for network planning and optimization.
+- Extracting project-related data for reporting.
+- Streamlining data management tasks in industries reliant on structured Excel files.
+
+# Conclusion
+This Python script demonstrates a powerful approach to automating data extraction from Excel files, saving time and reducing the risk of manual errors. Whether you're working in telecom, finance, or any other data-driven field, this solution can be tailored to meet your needs. By organizing the output into a structured format, it ensures that you can efficiently analyze and utilize your data.
+
+For more advanced use cases, consider adding error handling, logging, or visualizations to further enhance the script’s functionality.
