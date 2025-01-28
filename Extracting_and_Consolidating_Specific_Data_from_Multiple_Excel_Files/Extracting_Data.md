@@ -8,7 +8,27 @@ MS Data Science, School of Business and Economics<br>
 **Address:** Dream Gardens,Defence Road, Lahore<br>
 
 -----------------------------------------------------
-# Extracting and Consolidating Specific Data from Multiple Excel Files Using Python
+# Automating Data Extraction from Excel Files in Python: A Step-by-Step Guide
+
+## Introduction
+Managing data from multiple Excel files can be a tedious task, especially when dealing with large datasets that require extracting specific details. This article walks you through a Python script designed to automate the process of extracting key information from Excel files stored in a folder. By leveraging Python libraries like `os`, `pandas`, and `openpyxl`, this solution efficiently extracts and organizes the data into a consolidated output.
+
+## Objectives of the Script
+The goal of this script is to:
+
+1. Extract specific key-value pairs from multiple Excel files stored in a folder.
+2. Normalize the data into a consistent format.
+3. Save the extracted information into a well-organized output file.
+
+## Step-by-Step Explanation of the Code
+
+## 1. Setting Up the Environment
+The script starts by importing the necessary libraries:
+
+- `os` for file operations.
+- `pandas` for data manipulation and exporting.
+- `openpyxl` to interact with Excel files.
+The folder containing the Excel files is specified with `folder_path`.
 
 ## Import Required Libraries
 ```python
