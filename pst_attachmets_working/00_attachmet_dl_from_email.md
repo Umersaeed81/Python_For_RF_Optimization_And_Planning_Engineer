@@ -8,7 +8,7 @@ MS Data Science, School of Business and Economics<br>
 **Address:** Dream Gardens,Defence Road, Lahore<br>
 
 -----------------------------------------------------------------------------------
-# 📩 Extracting Email Attachments from Outlook PST Files using Python
+# 📩 Automating Email Attachment Extraction from Outlook PST Files Using Python
 
 ![](https://github.com/Umersaeed81/Python_For_RF_Optimization_And_Planning_Engineer/blob/main/pst_attachmets_working/PIC_00.png?raw=true)
 
@@ -36,15 +36,27 @@ Handling email attachments manually can be time-consuming, especially if you rec
 
 The Python script leverages the `win32com.client` library to interact with Microsoft Outlook and extract attachments from a specified PST file. Here’s an overview of the steps:
 
-1️⃣ **Define Paths📍** – Specify the PST file location and the folder where attachments should be saved. 
+🔹 **Step 1: Define Paths 📍**
 
-2️⃣ **Initialize Outlook📧** – Connect to Microsoft Outlook using `win32com.client`. 
+- Specify the **PST file location** and the **target folder** inside the PST where emails are stored.
+- Set the **destination folder** where extracted attachments will be saved.
 
-3️⃣ **Load the PST File📂** – Ensure the PST file is added to Outlook. 
+🔹 **Step 2: Initialize Outlook 📧**
+- Use **win32com.client.Dispatch("Outlook.Application")** to create an instance of Outlook.
+- This allows Python to interact with Outlook and access its stored emails.
 
-4️⃣ **Access the Email Folder** – Navigate to the required folder inside the PST. 
+🔹 **Step 3: Load the PST File 📂**
+- Ensure the **PST file** is loaded into Outlook.
+- If the PST file is not already added, the script automatically loads it.
 
-5️⃣ **Extract Attachments📥** – Loop through emails and save the attachments to a designated folder.
+🔹 **Step 4: Access the Email Folder 📑**
+- Navigate to the **specific folder** inside the PST file where emails with attachments are stored.
+
+🔹 **Step 5: Extract and Save Attachments 📥**
+- Loop through **all emails** in the specified folder.
+- If an email has an attachment, save it to the predefined folder.
+
+The script ensures each attachment is stored properly while maintaining its original filename.
 
 ## Prerequisites 🖥️
 
