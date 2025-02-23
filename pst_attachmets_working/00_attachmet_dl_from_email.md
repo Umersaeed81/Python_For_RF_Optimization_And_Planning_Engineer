@@ -116,7 +116,7 @@ outlook = win32com.client.Dispatch("Outlook.Application")
 
 This block retrieves the MAPI namespace to interact with emails.
 
-### Messaging Application Programming Interface (MAPI)
+### 📩 Messaging Application Programming Interface (MAPI)
 
 MAPI (Messaging Application Programming Interface) is a Microsoft-developed API that enables applications to interact with email messaging systems like Microsoft Outlook. It provides functionality for:
 
@@ -130,15 +130,15 @@ MAPI (Messaging Application Programming Interface) is a Microsoft-developed API 
 
 There are two main types of MAPI:
 
-1. **Simple MAPI** – A lightweight version for basic email functions (sending messages, opening the default email client).
-2. **Extended MAPI** – A full-featured version allowing complete control over Outlook data, used in applications like Outlook itself.
+1. **📧 Simple MAPI** – A lightweight version for basic email functions (sending messages, opening the default email client).
+2. **🛠️ Extended MAPI** – A full-featured version allowing complete control over Outlook data, used in applications like Outlook itself.
 
-In this code uses **Extended MAPI** because it interacts directly with Outlook’s internal storage and processes emails, folders, and attachments within a PST file.
+🔍 In this code uses **Extended MAPI** because it interacts directly with Outlook’s internal storage and processes emails, folders, and attachments within a PST file.
 
 ### MAPI Namespace
 
 - The **MAPI Namespace** is the **starting point** for accessing all Outlook data.
-- It provides methods to manage PST files, navigate folders, and retrieve emails.
+- It provides methods to **manage PST files, navigate folders, and retrieve emails**.
 - Your code uses it to load a PST file and extract attachments from a specific folder.
 
 
