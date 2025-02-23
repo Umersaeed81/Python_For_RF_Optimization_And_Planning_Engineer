@@ -52,11 +52,11 @@ The Python script leverages the `win32com.client` library to interact with Micro
 
 To use this script, ensure you have: 
 
-✔️ Microsoft Outlook installed on your system. 
+💻 Microsoft Outlook installed on your system.
 
-✔️ The pywin32 library installed (`pip install pywin32`). 
+📦 The pywin32 library installed (`pip install pywin32`).
 
-✔️ A PST file containing the emails with attachments you need to extract.
+📁 A PST file containing the emails with attachments you need to extract.
 
 ## Real-World Applications 🌎
 
