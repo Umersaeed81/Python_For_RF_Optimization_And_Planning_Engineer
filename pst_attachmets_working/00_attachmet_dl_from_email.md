@@ -70,7 +70,7 @@ This automation can be beneficial for:
 
 📌 **Data Analysis** – Extract and process data from email attachments for further analysis.
 
-# Python Code
+# 🐍 Python Code
 
 ## Step-1: Import Required Libraries 📦🐍
 
