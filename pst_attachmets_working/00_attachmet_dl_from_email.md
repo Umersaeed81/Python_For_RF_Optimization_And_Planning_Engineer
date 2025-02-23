@@ -60,7 +60,7 @@ To use this script, ensure you have:
 
 ## Real-World Applications 🌎
 
-![](https://github.com/Umersaeed81/Python_For_RF_Optimization_And_Planning_Engineer/blob/main/pst_attachmets_working/PIC_05.png)
+![](![](https://github.com/Umersaeed81/Python_For_RF_Optimization_And_Planning_Engineer/blob/main/pst_attachmets_working/PIC_05.png?raw=true))
 
 This automation can be beneficial for: 
 
