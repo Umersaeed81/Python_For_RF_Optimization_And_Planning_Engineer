@@ -101,4 +101,4 @@ for zip_name in filtered_zips:
 
 By leveraging automation, filtering ZIP files based on their contents becomes a streamlined process, eliminating the need for manual inspections. This method can be particularly useful in handling large volumes of data efficiently.
 
-For a complete implementation, you can check out the code on GitHub: [GitHub Repository Link]
+For a complete implementation, you can check out the code on GitHub: [[GitHub Repository Link](https://github.com/Umersaeed81/Python_For_RF_Optimization_And_Planning_Engineer/blob/main/pst_attachmets_working/01_Filtering_ZIP_Files_That_Do_Not_Contain_Specific_Keywords.md)]
