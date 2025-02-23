@@ -36,15 +36,15 @@ Handling email attachments manually can be time-consuming, especially if you rec
 
 The Python script leverages the `win32com.client` library to interact with Microsoft Outlook and extract attachments from a specified PST file. Here’s an overview of the steps:
 
-1️⃣ **Define Paths** – Specify the PST file location and the folder where attachments should be saved. 
+1️⃣ **Define Paths📍** – Specify the PST file location and the folder where attachments should be saved. 
 
-2️⃣ **Initialize Outlook** – Connect to Microsoft Outlook using `win32com.client`. 
+2️⃣ **Initialize Outlook📧 ** – Connect to Microsoft Outlook using `win32com.client`. 
 
-3️⃣ **Load the PST File** – Ensure the PST file is added to Outlook. 
+3️⃣ **Load the PST File📂** – Ensure the PST file is added to Outlook. 
 
 4️⃣ **Access the Email Folder** – Navigate to the required folder inside the PST. 
 
-5️⃣ **Extract Attachments** – Loop through emails and save the attachments to a designated folder.
+5️⃣ **Extract Attachments📥** – Loop through emails and save the attachments to a designated folder.
 
 ## Prerequisites 🖥️
 
