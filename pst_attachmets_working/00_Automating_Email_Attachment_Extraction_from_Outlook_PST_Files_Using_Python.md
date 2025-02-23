@@ -1,8 +1,15 @@
 # [Umer Saeed](https://www.linkedin.com/in/engumersaeed/)  
 **Senior RF Planning & Optimization Engineer**  
-**Huawei**  
-✉ **Email:** [umersaeed@huawei.com](umersaeed@huawei.com)  
+
+
+📍 **Location:** Dream Gardens, Defence Road, Lahore  
 📞 **Mobile:** +92 301 8412180  
+✉ **Email:** [umersaeed81@hotmail.com](mailto:umersaeed81@hotmail.com)  
+
+## **Education**  
+🎓 **BSc Telecommunications Engineering** – School of Engineering  
+🎓 **MS Data Science** – School of Business and Economics  
+**University of Management & Technology** 
 
 ------------------------------------------
 
