@@ -38,7 +38,7 @@ The Python script leverages the `win32com.client` library to interact with Micro
 
 1️⃣ **Define Paths📍** – Specify the PST file location and the folder where attachments should be saved. 
 
-2️⃣ **Initialize Outlook📧 ** – Connect to Microsoft Outlook using `win32com.client`. 
+2️⃣ **Initialize Outlook📧** – Connect to Microsoft Outlook using `win32com.client`. 
 
 3️⃣ **Load the PST File📂** – Ensure the PST file is added to Outlook. 
 
