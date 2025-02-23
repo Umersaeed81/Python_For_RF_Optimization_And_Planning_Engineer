@@ -197,6 +197,6 @@ Automating email attachment extraction from Outlook PST files can significantly 
 
 ✅ Ensure a well-organized email management system.
 
-This method is especially useful for professionals dealing with frequent reports, invoices, or important document tracking. You can further enhance this script by adding filters, scheduling automation, and logging for improved functionality.
+This method is especially useful for professionals dealing with **frequent reports, invoices, or important document tracking**. You can further enhance this script by adding **filters, scheduling automation, and logging** for improved functionality.
 
 💡*Want to automate more Outlook tasks? Stay tuned for future articles!*
