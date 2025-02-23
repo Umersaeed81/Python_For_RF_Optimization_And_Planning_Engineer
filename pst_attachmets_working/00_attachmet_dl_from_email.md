@@ -70,7 +70,7 @@ This automation can be beneficial for:
 
 # Python Code
 
-## Step-1: Import Required Libraries
+## Step-1: Import Required Libraries 📦🐍
 
 We start by importing the required libraries. `os` helps with file handling, and `win32com.client` enables Outlook automation.
 - **`pywin32`** is a Python package that provides access to Windows API functions, including COM objects.
@@ -82,7 +82,7 @@ import os
 import win32com.client
 ```
 
-## Step-2: Define Paths and Ensure Save Folder Exists
+## Step-2: Define Paths and Ensure Save Folder Exists 📁✅
 
 This block sets the paths for the PST file, target folder inside the PST, and the local save folder for attachments. It also ensures the save folder exists.
 
@@ -97,7 +97,7 @@ save_folder = r"E:\PRS_Email\Attachments"
 os.makedirs(save_folder, exist_ok=True)
 ```
 
-## Step-3: Initialize Outlook 
+## Step-3: Initialize Outlook 💻📬
 
 This block initializes the Outlook application.
 
@@ -110,7 +110,7 @@ This block initializes the Outlook application.
 outlook = win32com.client.Dispatch("Outlook.Application")
 ```
 
-## Step-4: Access MAPI Namespace
+## Step-4: Access MAPI Namespace 📜📤
 
 This block retrieves the MAPI namespace to interact with emails.
 
@@ -144,7 +144,7 @@ In this code uses **Extended MAPI** because it interacts directly with Outlook�
 namespace = outlook.GetNamespace("MAPI")
 ```
 
-## Step-5: Add PST File to Outlook if Not Already Added
+## Step-5: Add PST File to Outlook if Not Already Added 🗂️🔗
 
 This block adds the PST file to Outlook if it is not already available in the account.
 
@@ -154,7 +154,7 @@ This block adds the PST file to Outlook if it is not already available in the ac
 namespace.AddStore(pst_path)
 ```
 
-## Step-6: Retrieve the PST Root Folder
+## Step-6: Retrieve the PST Root Folder 🏠📂
 
 This block accesses the root folder of the specified PST file
 
@@ -164,7 +164,7 @@ This block accesses the root folder of the specified PST file
 root_folder = namespace.Folders["LTE_KPI_REPORTING"]
 ```
 
-## Step-7: Access the Target Folder in PST
+## Step-7: Access the Target Folder in PST 📁🔍
 
 This block navigates to the specified folder inside the PST file where emails are stored.
 
@@ -174,7 +174,7 @@ This block navigates to the specified folder inside the PST file where emails ar
 reports_folder = root_folder.Folders(folder_name)
 ```
 
-## Step-8: Extract and Save Email Attachments
+## Step-8: Extract and Save Email Attachments 📩💾
 
 This block iterates through emails in the specified folder, checks for attachments, and saves them to the defined local folder.
 
