@@ -7,12 +7,9 @@ MS Data Science, School of Business and Economics<br>
 **Email:**  umersaeed81@hotmail.com<br>
 **Address:** Dream Gardens,Defence Road, Lahore<br>
 
------------------------------------------------
-# Extracting Email Attachments from Outlook PST Files using Python
-
 ![](https://github.com/Umersaeed81/Python_For_RF_Optimization_And_Planning_Engineer/blob/main/pst_attachmets_working/PIC_00.png?raw=true)
 
-
+# Extracting Email Attachments from Outlook PST Files using Python
 
 📧 Managing emails efficiently is crucial, especially when dealing with reports, invoices, or other important attachments. If you frequently receive emails with attachments in a Microsoft Outlook PST file and need an automated way to extract them, Python can help! 🚀
 
@@ -70,9 +67,11 @@ This automation can be beneficial for:
 
 📌 **Data Analysis** – Extract and process data from email attachments for further analysis.
 
-##  Import Required Libraries
+# Python Code
 
-This block imports the necessary libraries, including `os` for file operations and `win32com.client` for interacting with Outlook.
+## Step-1: Import Required Libraries
+
+We start by importing the required libraries. `os` helps with file handling, and `win32com.client` enables Outlook automation.
 - **`pywin32`** is a Python package that provides access to Windows API functions, including COM objects.
 - **`win32com.client`** is a **module** within `pywin32` that allows Python to interact with COM objects, like Microsoft Outlook, Excel, and Word.
 
@@ -82,7 +81,7 @@ import os
 import win32com.client
 ```
 
-## Define Paths and Ensure Save Folder Exists
+## Step-2: Define Paths and Ensure Save Folder Exists
 
 This block sets the paths for the PST file, target folder inside the PST, and the local save folder for attachments. It also ensures the save folder exists.
 
@@ -97,7 +96,7 @@ save_folder = r"E:\PRS_Email\Attachments"
 os.makedirs(save_folder, exist_ok=True)
 ```
 
-## Initialize Outlook 
+## Step-3: Initialize Outlook 
 
 This block initializes the Outlook application.
 
@@ -110,7 +109,7 @@ This block initializes the Outlook application.
 outlook = win32com.client.Dispatch("Outlook.Application")
 ```
 
-## Access MAPI Namespace
+## Step-4: Access MAPI Namespace
 
 This block retrieves the MAPI namespace to interact with emails.
 
@@ -144,7 +143,7 @@ In this code uses **Extended MAPI** because it interacts directly with Outlook�
 namespace = outlook.GetNamespace("MAPI")
 ```
 
-## Add PST File to Outlook if Not Already Added
+## Step-5: Add PST File to Outlook if Not Already Added
 
 This block adds the PST file to Outlook if it is not already available in the account.
 
@@ -154,7 +153,7 @@ This block adds the PST file to Outlook if it is not already available in the ac
 namespace.AddStore(pst_path)
 ```
 
-## Retrieve the PST Root Folder
+## Step-6: Retrieve the PST Root Folder
 
 This block accesses the root folder of the specified PST file
 
@@ -164,7 +163,7 @@ This block accesses the root folder of the specified PST file
 root_folder = namespace.Folders["LTE_KPI_REPORTING"]
 ```
 
-## Access the Target Folder in PST
+## Step-7: Access the Target Folder in PST
 
 This block navigates to the specified folder inside the PST file where emails are stored.
 
@@ -174,7 +173,7 @@ This block navigates to the specified folder inside the PST file where emails ar
 reports_folder = root_folder.Folders(folder_name)
 ```
 
-## Extract and Save Email Attachments
+## Step-8: Extract and Save Email Attachments
 
 This block iterates through emails in the specified folder, checks for attachments, and saves them to the defined local folder.
 
@@ -190,7 +189,7 @@ for mail in reports_folder.Items:
 print("Attachment download complete.")
 ```
 
-# Conclusion 🎯
+## Conclusion 🎯
 
 Automating email attachment extraction from Outlook PST files can significantly improve efficiency, save time, and reduce manual errors. With just a few lines of Python code, you can:
 
@@ -203,3 +202,8 @@ Automating email attachment extraction from Outlook PST files can significantly 
 This method is especially useful for professionals dealing with **frequent reports, invoices, or important document tracking**. You can further enhance this script by adding **filters, scheduling automation, and logging** for improved functionality.
 
 💡*Want to automate more Outlook tasks? Stay tuned for future articles!*
+
+
+```python
+
+```
