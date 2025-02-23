@@ -118,10 +118,10 @@ This block retrieves the MAPI namespace to interact with emails.
 
 MAPI (Messaging Application Programming Interface) is a Microsoft-developed API that enables applications to interact with email messaging systems like Microsoft Outlook. It provides functionality for:
 
-- Accessing emails, folders, and attachments
-- Sending and receiving emails
-- Managing contacts, calendars, and tasks
-- Interacting with PST (Personal Storage Table) and Exchange mailboxes
+✅ Accessing emails, folders, and attachments
+✅ Sending and receiving emails
+✅ Managing contacts, calendars, and tasks
+✅ Interacting with PST (Personal Storage Table) and Exchange mailboxes
 
 There are two main types of MAPI:
 
