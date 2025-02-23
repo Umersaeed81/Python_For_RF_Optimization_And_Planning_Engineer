@@ -1,6 +1,8 @@
+# Extracting Email Attachments from Outlook PST Files using Python
+
 ![](https://github.com/Umersaeed81/Python_For_RF_Optimization_And_Planning_Engineer/blob/main/pst_attachmets_working/PIC_00.png?raw=true)
 
-# Extracting Email Attachments from Outlook PST Files using Python
+
 
 📧 Managing emails efficiently is crucial, especially when dealing with reports, invoices, or other important attachments. If you frequently receive emails with attachments in a Microsoft Outlook PST file and need an automated way to extract them, Python can help! 🚀
 
