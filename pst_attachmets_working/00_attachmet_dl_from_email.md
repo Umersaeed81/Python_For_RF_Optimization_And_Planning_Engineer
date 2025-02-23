@@ -22,13 +22,13 @@ MS Data Science, School of Business and Economics<br>
 
 Handling email attachments manually can be time-consuming, especially if you receive frequent reports or need to process a large number of files. Automating this process with Python offers several benefits:
 
-✅ **⏳ Saves time** – No need to download each attachment manually. 
+**⏳ Saves time** – No need to download each attachment manually. 
 
-✅ **⚠️ Reduces errors** – Avoid missing important files. 
+**⚠️ Reduces errors** – Avoid missing important files. 
 
-✅ **📂 Organized storage** – Automatically save attachments to a predefined folder. 
+**📂 Organized storage** – Automatically save attachments to a predefined folder. 
 
-✅ **📈 Scalability** – Process multiple emails efficiently.
+**📈 Scalability** – Process multiple emails efficiently.
 
 ## How It Works 🛠️
 
