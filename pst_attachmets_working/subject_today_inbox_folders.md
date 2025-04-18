@@ -51,7 +51,7 @@ download_folder = r'D:\Downloaded_Attachments'
 os.makedirs(download_folder, exist_ok=True)  # ✅ Ensure the folder exists (create if not)
 ```
 
-# 📬 Connect to Outlook Inbox 📧
+## 📬 Connect to Outlook Inbox 📧
 
 
 ```python
