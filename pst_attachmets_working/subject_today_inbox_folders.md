@@ -107,7 +107,7 @@ def search_folder(folder):
 # 🚀 Start Searching from Inbox
 search_folder(inbox)
 ```
-
+## 📤 Ouput
     Downloaded from 'Inbox': DAILY_BSSP_3G_59-20250418074854.zip
     Downloaded from 'PRS': DAILY_BSSP_3G_59-20250418074854.zip
     
