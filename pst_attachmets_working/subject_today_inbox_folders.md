@@ -11,7 +11,7 @@
 🎓 **MS Data Science** – School of Business and Economics  
 **University of Management & Technology** 
 
-# ---------------------------------------------------------------------------
+------------------------------------------
 
 # 📨 Automating Outlook Attachment Downloads Based on Subject and Date using Python 🐍
 
