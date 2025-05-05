@@ -1,9 +1,26 @@
+# [Umer Saeed](https://www.linkedin.com/in/engumersaeed/)  
+**Senior RF Planning & Optimization Engineer**  
+
+
+📍 **Location:** Dream Gardens, Defence Road, Lahore  
+📞 **Mobile:** +92 301 8412180  
+✉ **Email:** [umersaeed81@hotmail.com](mailto:umersaeed81@hotmail.com)  
+
+## **Education**  
+🎓 **BSc Telecommunications Engineering** – School of Engineering  
+🎓 **MS Data Science** – School of Business and Economics  
+**University of Management & Technology** 
+
+------------------------------------------
+# 📅 Enhance Your Data Analysis with Pre and Post Event Timelines in Pandas
+
+## Import required Libraries
 ```python
 import pandas as pd
 from datetime import timedelta
 ```
 
-
+## Input Data Set
 ```python
 # Input DataFrame
 df = pd.DataFrame({
@@ -12,7 +29,7 @@ df = pd.DataFrame({
 })
 ```
 
-
+## User define funcation
 ```python
 def generate_labeled_dates(row):
     location = row['Location']
@@ -45,18 +62,14 @@ final_df = pd.concat([generate_labeled_dates(row) for _, row in df.iterrows()], 
 
 ```
 
-
+## Display Output Data Frame
 ```python
 # Output
 final_df
 ```
 
-
+## Export Ouput
 ```python
 final_df.to_csv('dd.csv',index=False)
 ```
 
-
-```python
-
-```
