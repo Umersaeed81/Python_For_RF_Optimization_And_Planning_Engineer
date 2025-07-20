@@ -1988,3 +1988,34 @@ print("✅ All matching PowerPoint files processed.")
 ```python
 %reset -f
 ```
+
+import os                      # 📁 For interacting with the operating system (file paths, directory checks, etc.)
+import zipfile                 # 🗜️ For handling ZIP archive files
+import numpy as np             # 🔢 For numerical operations and arrays
+import pandas as pd            # 🐼 For data manipulation and analysis
+from pathlib import Path       # 🛤️ For object-oriented file path handling
+from datetime import time      # ⏰ For working with time objects (e.g., filtering by hour)
+from functools import reduce   # 🔄 For function-based reduction (e.g., combining multiple DataFrames)
+from pandas import Timestamp   # 📅 For handling timestamps specifically in pandas
+
+from pptx.util import Inches                   # 📐 For specifying size/dimensions of shapes or images in inches
+from pptx import Presentation                  # 📊 For creating and editing PowerPoint presentations
+from pptx.util import Pt                       # 🔠 For setting font size in points
+from pptx.enum.shapes import MSO_SHAPE_TYPE    # 🧩 For identifying and handling different shape types in slides
+from pptx.dml.color import RGBColor            # 🎨 For setting custom RGB colors for text/shapes
+from pptx.enum.text import PP_ALIGN            # 📏 For setting paragraph alignment (left, center, right, etc.)
+from pptx.chart.data import CategoryChartData  # 📈 For providing data to category charts (like bar/column charts)
+
+path = 'D:/Advance_Data_Sets/PPT_Sunset_NW'                    # 📁 Set working directory path for data and templates
+os.chdir(path)                                                 # 🔄 Change current working directory to the specified path
+
+prs_phase4 = Presentation('template_phase3.pptx')              # 📊 Load PowerPoint template for Phase-4
+
+# Choose the slide number (e.g., second slide)
+slide = prs_phase4 .slides[19]  # 0-based index
+
+# Loop through and print info about each shape
+for idx, shape in enumerate(slide.shapes):
+    shape_type = shape.shape_type
+    name = getattr(shape, "name", "No name")
+    print(f"Index: {idx}, Type: {shape_type}, Name: {name}, Has Chart: {shape.has_chart}")
