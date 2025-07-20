@@ -2028,14 +2028,7 @@ for idx, shape in enumerate(slide.shapes):
     print(f"Index: {idx}, Type: {shape_type}, Name: {name}, Has Chart: {shape.has_chart}")
 ```
 
-    Index: 0, Type: TEXT_BOX (17), Name: TextBox 6, Has Chart: False
-    Index: 1, Type: TEXT_BOX (17), Name: TextBox 4, Has Chart: False
-    Index: 2, Type: CHART (3), Name: Narowal, Has Chart: True
-    Index: 3, Type: CHART (3), Name: Center_Region_SZ, Has Chart: True
+
     
 
-
-```python
-
-```
 
