@@ -20,7 +20,7 @@ from pptx.enum.text import PP_ALIGN            # 📏 For setting paragraph alig
 from pptx.chart.data import CategoryChartData  # 📈 For providing data to category charts (like bar/column charts)
 ```
 
-## 2. ✅ `standard_cg_mapping`: Reusable Cell Group Standardization Dictionary
+## ✅ 2.  `standard_cg_mapping`: Reusable Cell Group Standardization Dictionary
 
 
 ```python
