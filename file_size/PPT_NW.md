@@ -1989,6 +1989,7 @@ print("✅ All matching PowerPoint files processed.")
 %reset -f
 ```
 
+```python
 import os                      # 📁 For interacting with the operating system (file paths, directory checks, etc.)
 import zipfile                 # 🗜️ For handling ZIP archive files
 import numpy as np             # 🔢 For numerical operations and arrays
@@ -2005,12 +2006,18 @@ from pptx.enum.shapes import MSO_SHAPE_TYPE    # 🧩 For identifying and handli
 from pptx.dml.color import RGBColor            # 🎨 For setting custom RGB colors for text/shapes
 from pptx.enum.text import PP_ALIGN            # 📏 For setting paragraph alignment (left, center, right, etc.)
 from pptx.chart.data import CategoryChartData  # 📈 For providing data to category charts (like bar/column charts)
+```
 
+
+```python
 path = 'D:/Advance_Data_Sets/PPT_Sunset_NW'                    # 📁 Set working directory path for data and templates
 os.chdir(path)                                                 # 🔄 Change current working directory to the specified path
 
 prs_phase4 = Presentation('template_phase3.pptx')              # 📊 Load PowerPoint template for Phase-4
+```
 
+
+```python
 # Choose the slide number (e.g., second slide)
 slide = prs_phase4 .slides[19]  # 0-based index
 
@@ -2019,3 +2026,16 @@ for idx, shape in enumerate(slide.shapes):
     shape_type = shape.shape_type
     name = getattr(shape, "name", "No name")
     print(f"Index: {idx}, Type: {shape_type}, Name: {name}, Has Chart: {shape.has_chart}")
+```
+
+    Index: 0, Type: TEXT_BOX (17), Name: TextBox 6, Has Chart: False
+    Index: 1, Type: TEXT_BOX (17), Name: TextBox 4, Has Chart: False
+    Index: 2, Type: CHART (3), Name: Narowal, Has Chart: True
+    Index: 3, Type: CHART (3), Name: Center_Region_SZ, Has Chart: True
+    
+
+
+```python
+
+```
+
