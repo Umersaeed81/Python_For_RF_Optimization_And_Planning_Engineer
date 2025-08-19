@@ -56,6 +56,9 @@ df = pd.DataFrame(data, columns=["Folder", "Size_GB", "Date"])
 
 
 ```python
+folder_path = 'D:/Otput'
+os.chdir(folder_path)
+
 today_str = date.today().strftime("%Y%m%d")
 df.to_excel(f"File_size_{today_str}.xlsx",index=False)
 ```
