@@ -56,7 +56,7 @@ df = pd.DataFrame(data, columns=["Folder", "Size_GB", "Date"])
 
 
 ```python
-folder_path = 'D:/Otput'
+folder_path = 'D:/Output'
 os.chdir(folder_path)
 
 today_str = date.today().strftime("%Y%m%d")
